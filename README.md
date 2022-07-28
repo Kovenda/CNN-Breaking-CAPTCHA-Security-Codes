@@ -119,10 +119,6 @@ y_valid, y_train = y_train[:5000], y_train[5000:]
 # Fit Model
 
 ``` {.python}
-
-```
-
-``` {.python}
 n_epochs = 10
 batch_size = 500
 
@@ -158,10 +154,3 @@ with tf.Session() as sess:
 
 > * As the batch increases, the training set and test set accuracy are increasing as well. The test set accuracy score converges to 98.378%, which means that the CNN model is predicting the individual character ASCII codes of the CAPTCHA images better than the random forest model, at least a percentage or less better
 > * The creation of a dataset of characters separated from CAPTCHA images allowed for the fitting of that image data to a convolutional neural network. The purpose of predicting the characters in a CAPTCHA was to give bots the ability to bypass security systems which use CAPTCHA to deny bots entry to their websites. The model used in this research predicted the characters in CAPTCHA images with 98.378% accuracy. A bot equipped with this model will be able to bypass anti-bot security systems equipped with captcha 98% of the time, by simply entering the characters it predicts to be in the image and ticking the “I am not a robot” box.
-
-
-
-
-
-
-
