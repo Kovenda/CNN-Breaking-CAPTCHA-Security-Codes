@@ -149,7 +149,7 @@ with tf.Session() as sess:
 |1| 0.9643564| 0.96038234|
 |2 | 0.980198 | 0.9771098|
 |3 | 0.97821784 | 0.9800025|
-|4  0.9841584| 0.98063135|
+|4 | 0.9841584| 0.98063135|
 |5|0.990099|0.9825179|
 |6 | 0.9841584| 0.9835241|
 |7 | 0.9940594 | 0.9837756|
@@ -157,7 +157,7 @@ with tf.Session() as sess:
 |9 | 0.98613864 |0.9837756|
 
 > * As the batch increases, the training set and test set accuracy are increasing as well. The test set accuracy score converges to 98.378%, which means that the CNN model is predicting the individual character ASCII codes of the CAPTCHA images better than the random forest model, at least a percentage or less better
-> * The creation of a dataset of characters separated from CAPTCHA images allowed for the fitting of that image data to two supervised machine learning models: random forest and convolutional neural network. The purpose of predicting the characters in a CAPTCHA was to give bots the ability to bypass security systems which use CAPTCHA to deny bots entry to their websites. The model used in this research predicted the characters in CAPTCHA images with more than 97% accuracy on their validation (test) sets with the random forest model performing the best at 98.378%. A bot equipped with this model will be able to bypass anti-bot security systems 98% of the time, by simply entering the characters it predicts to be in the image and ticking the “I am not a robot” box.
+> * The creation of a dataset of characters separated from CAPTCHA images allowed for the fitting of that image data to a convolutional neural network. The purpose of predicting the characters in a CAPTCHA was to give bots the ability to bypass security systems which use CAPTCHA to deny bots entry to their websites. The model used in this research predicted the characters in CAPTCHA images with 98.378% accuracy. A bot equipped with this model will be able to bypass anti-bot security systems equipped with captcha 98% of the time, by simply entering the characters it predicts to be in the image and ticking the “I am not a robot” box.
 
 
 
