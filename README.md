@@ -1,5 +1,5 @@
 # CNN-Breaking-CAPTCHA-Security-Codes
-> CNNs are a type of neural network that allow greater extraction of features from captured images. Unlike classical models, CNNs take image data, train the model, and then classify the features automatically for healthier classification. The image data was fit to the CNN model with 80% in the training set and 20% in the testing set. Since the technology that was used to fit the image data to the CNN did not allow for the label to be a string, the 32 individual characters strings of the CAPTCHA images were converted to their corresponding ASCII codes, as illustrated above
+> CNNs are a type of neural network that allow greater extraction of features from captured images. Unlike classical models, CNNs take image data, train the model, and then classify the features automatically for healthier classification. The image data was fit to the CNN model with 80% in the training set and 20% in the testing set. Since the technology that was used to fit the image data to the CNN did not allow for the label to be a string, the 32 individual characters strings of the CAPTCHA images were converted to their corresponding ASCII codes, as illustrated in the following steps
 
 ## Data
 The images data used for this model went through some image processing and was flattened to a csv
