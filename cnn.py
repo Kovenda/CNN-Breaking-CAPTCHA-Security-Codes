@@ -1,15 +1,15 @@
 # Common imports
 import numpy as np
 import os
-
-
-# to make this notebook's output stable across runs
-np.random.seed(42)
 import pandas as pd
-# To plot pretty figures
 %matplotlib inline
 import matplotlib as mpl
 import matplotlib.pyplot as plt
+import tensorflow as tf
+tf.__version__
+
+# to make this notebook's output stable across runs
+np.random.seed(42)
 mpl.rc('axes', labelsize=14)
 mpl.rc('xtick', labelsize=12)
 mpl.rc('ytick', labelsize=12)
@@ -33,10 +33,6 @@ imagesDF.drop(columns =["Unnamed: 0"], inplace = True)
 # Dfs to Arrays
 imagesArray = imagesDF.to_numpy()
 labelsArray = labelsDF.to_numpy()
-
-# Import TensorFlow
-import tensorflow as tf
-tf.__version__
 
 # Set Random Seeds
 def reset_graph(seed=42):
